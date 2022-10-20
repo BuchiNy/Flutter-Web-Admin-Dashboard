@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:admin/contollers/navigation_controller.dart';
+import 'package:admin/constants/style.dart';
 import 'layout.dart';
 
 void main() {
@@ -21,13 +22,13 @@ class MyApp extends StatelessWidget {
       title: 'Admin',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        scaffoldBackgroundColor: Colors.white,
+        scaffoldBackgroundColor: light,
         textTheme: GoogleFonts.mulishTextTheme(
           Theme.of(context).textTheme
         ).apply(
           bodyColor: Colors.black
         ),
-        pageTransitionsTheme: PageTransitionsTheme(
+        pageTransitionsTheme: const PageTransitionsTheme(
           builders: {
             TargetPlatform.iOS: FadeUpwardsPageTransitionsBuilder(),
             TargetPlatform.android: FadeUpwardsPageTransitionsBuilder()

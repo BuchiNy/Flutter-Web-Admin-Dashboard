@@ -18,13 +18,13 @@ Route<dynamic> generateRoute(RouteSettings settings){
     case UserPageRoute:
       return _getPageRoute(const Profile());
     case DriversPageRoute:
-      return _getPageRoute(Transfer());
+      return _getPageRoute(const Transfer());
     case ClientsPageRoute:
-      return _getPageRoute(PrisonerDetails());
+      return _getPageRoute(const PrisonerDetails());
     case AuthenticationPageRoute:
-      return _getPageRoute(Authentication());
+      return _getPageRoute(const Authentication());
     default:
-      return _getPageRoute(Profile());
+      return _getPageRoute(const Profile());
   }
 }
 
